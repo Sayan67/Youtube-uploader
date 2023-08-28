@@ -50,7 +50,8 @@ ii) change '<Your MongoDB instanse>' part with your MongoDB
 instanse.
 For reference👉 https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
 
- 5.Get your google client_id
+
+5.Get your google client_id
 For reference👉 https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
 
 6. Navigate to the file index.ejs in client/template/views/
