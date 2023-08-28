@@ -25,6 +25,57 @@ Consumers dont need to invest themselves in uploading content,securing the inter
 ## Overview 📖
 We are a platform that empowers YouTube channel owners with robust security measures and convenient access management tools. Whether you're a solo content creator or manage a team of collaborators, we provide a seamless and secure environment for managing your YouTube channel effectively.
 
+
+
+## How to Run this project locally
+
+1. Clone the project (How to clone👉)(https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+
+2. Navigate to the cloned repository in your local system.
+
+```bash
+  cd <Project folder name>
+```
+
+3. Install dependencies
+
+```bash
+  npm install
+```
+
+4. Connect your mongoDb Database.
+ i) Navigate to the server folder
+ii) change '<Your MongoDB instanse>' part with your MongoDB
+instanse.
+For reference👉 https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
+
+5.Get your google client_id
+For reference👉 https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
+
+6. Navigate to the file index.ejs in client/template/views/
+
+7. Replace 'YOUR GOOGLE CLIENT_ID' in 8th line
+with yoour google client_Id.
+
+8. Start the server
+
+ Navigate to the server folder.
+```
+    cd ../../../server
+```
+9. Start nodemon.
+```bash
+  nodemon app.js
+```
+10. Open anhy browser :
+    in address bar type -> localhost:3000/home 
+    and hit enter!
+
+Congratulations you have done it!! 🎉
+
+
+
 ## Challenges 🛠️
 Creating this website was not really easy for us.We faced quite a few complications in the process some of which are:
 
