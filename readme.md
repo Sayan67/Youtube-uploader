@@ -44,3 +44,5 @@ HTML, CSS, Javascript, NodeJS, Xpress, hbs, ejs , MongoDB, MongoDB compass, Mong
 2. Shinjini Bose
 
 ## Love from Kill-a-Byte team.❤️
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 
