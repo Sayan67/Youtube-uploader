@@ -23,7 +23,7 @@ const { oauth2 } = require('googleapis/build/src/apis/oauth2');
 
 
 // //mongoDb connection with MongoDb atlas
-mongoose.connect("mongodb+srv://Sayan67:iruqikmanded2@cluster0.it7p7iz.mongodb.net/YoutuberEditorCollab?retryWrites=true&w=majority").then(() => {
+mongoose.connect("<Your MongoDB instanse>").then(() => {
 
 }).then(console.log(`Connection successful.`));
 
