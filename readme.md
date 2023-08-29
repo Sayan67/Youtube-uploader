@@ -9,6 +9,10 @@ Basically we provide a platform where you(Youtuber) and your service provider(Ed
 He can directly upload the video in your Youtube channel using Title, Tags, Description etc. through our website.
 Our server will upload the video in your channel using YoutubeAPI.
 So it's Safe!
+![Screenshot from 2023-08-29 09-34-13](https://github.com/Sayan67/Youtube-uploader/assets/94789182/685c6368-ba20-4e18-97fa-21c4aa238eb1) ![Screenshot from 2023-08-29 18-01-26](https://github.com/Sayan67/Youtube-uploader/assets/94789182/4b00eed3-bf02-46b4-87c6-ed7511b2ee59)
+
+
+
 
 ## About us 💜
 We are a platform that ensures security and facilitates access to one's YouTube channel that involves combining authentication, authorization, and management features to provide a secure and user-friendly experience for Youtube channel owners.
