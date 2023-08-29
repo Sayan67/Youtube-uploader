@@ -111,8 +111,8 @@ Creating this website was not really easy for us.We faced quite a few complicati
 
 
 ## Contributors
-1. [Sayan Das](https://www.linkedin.com/in/sayan-das-435b1721a/) 
-2. [Shinjini Bose](https://www.linkedin.com/in/shinjini-bose-9aa57b23a/)
+1. ![Sayan linkedin pic](https://media.licdn.com/dms/image/D5603AQHetbXb6zc77g/profile-displayphoto-shrink_800_800/0/1692155149284?e=1698883200&v=beta&t=3gvNFx4y6ySjqzos0-2K2empirhUnwXLGLyHacTx5-o) [Sayan Das](https://www.linkedin.com/in/sayan-das-435b1721a/) 
+2. ![Shinjini pic]( https://media.licdn.com/dms/image/D4D03AQFcZ9g99emyUw/profile-displayphoto-shrink_800_800/0/1669611225502?e=1698883200&v=beta&t=hW20CsIQEGROf26L4P-V3NFSYcnlfFbgRnFUAP5S8Wk) [Shinjini Bose](https://www.linkedin.com/in/shinjini-bose-9aa57b23a/)
 
 ## Love from Kill-a-Byte team.❤️
 
