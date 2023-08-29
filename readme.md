@@ -111,8 +111,8 @@ Creating this website was not really easy for us.We faced quite a few complicati
 
 
 ## Contributors
-1. Sayan Das 
-2. Shinjini Bose
+1. [Sayan Das](https://www.linkedin.com/in/sayan-das-435b1721a/) 
+2. [Shinjini Bose](https://www.linkedin.com/in/shinjini-bose-9aa57b23a/)
 
 ## Love from Kill-a-Byte team.❤️
 
