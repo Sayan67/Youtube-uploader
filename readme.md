@@ -17,6 +17,9 @@ We are a platform that ensures security and facilitates access to one's YouTube 
 1. We Provide secure upload, schedule, and manage video content in your Youtube channel directly from the platform by any service provider.            
 2. Your channel credentials remain protected with us. The merchants don't get the access to those.  
 3. The service provider choose,sets the thumbnail,Title, Description etc as per their words and uploads the video from our website to directly in your channel.
+4. One you Sign up your sign in credentials will be stored in our database.
+5. After that you can sign in with google easily.
+   ![Logo](https://onymos.com/wp-content/uploads/2020/10/google-signin-button.png)
 
 
 ## Use ⚙️
