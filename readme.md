@@ -45,9 +45,9 @@ We are a platform that empowers YouTube channel owners with robust security meas
 ```
 
 4. Connect your mongoDb Database.
+
  i) Navigate to the server folder
-ii) change '<Your MongoDB instanse>' part with your MongoDB
-instanse.
+ii) Replace the part 'Your MongoDB instance' part with your MongoDB instance.
 For reference👉 https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
 
 
@@ -59,9 +59,9 @@ For reference👉 https://developers.google.com/identity/gsi/web/guides/get-goog
 7. Replace 'YOUR GOOGLE CLIENT_ID' in 8th line
 with yoour google client_Id.
 
-8. Start the server
 
- Navigate to the server folder.
+8. Start the server
+Navigate to the server folder.
 ```
     cd ../../../server
 ```
