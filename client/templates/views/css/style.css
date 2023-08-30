@@ -13,6 +13,14 @@
   transition: .2s linear;
 }
 
+:root {
+  --red-accent-color: #e51b1b;
+  --bg-color: #eee;
+}
+
+body {
+  background-color: var(--bg-color);
+}
 
 html {
   font-size: 62.5%;
@@ -35,6 +43,68 @@ html::-webkit-scrollbar-thumb {
 
 section {
   padding: 5rem 9%;
+  background-color: var(--bg-color);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.profileCard {
+  position: relative;
+  border: 2px solid #bbb;
+  border-radius: 100%;
+
+  cursor: pointer;
+}
+
+.profilePicture > img {
+  border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  display: block;
+}
+
+.profileCard:hover > .profileGmail{
+  opacity: 1;
+  display: block;
+}
+
+.profileGmail {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background: var(--red-accent-color);
+  border-radius: 0.4em;
+  padding: 0.7em 1em;
+  font-size: 1.5rem;
+
+  display: none;
+  opacity: 0;
+
+  transition: all 300ms;
+
+  width: max-content;
+}
+
+.signinButton {
+  color: white;
+  background: var(--red-accent-color);
+  padding: 0.5em 0.9em;
+  border-radius: 0.2em;
+
+  border: 1px solid var(--red-accent-color);
+  transition: all 300ms;
+
+  margin-left: 1.7em;
+  cursor: pointer;
+}
+
+.singinButton:hover {
+  background: transparent;
+  color: var(--red-accent-color);
 }
 
 .btn {
@@ -61,6 +131,8 @@ section {
 
 }
 .header {
+  background: white;
+  border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
   left: 0;

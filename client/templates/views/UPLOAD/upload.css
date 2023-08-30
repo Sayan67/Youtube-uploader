@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
 
-body {
-  /* background-color: rgb(218, 219, 220); */
-}
+
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -17,7 +15,9 @@ body {
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
-
+body{
+  background-color: #f0eeee;
+}
 .root {
   width: 100%;
   min-height: 100vh;
@@ -30,13 +30,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* box-shadow: 0 0 10px 0 rgb(164, 155, 155) inset; */
+  box-shadow: 0 0 10px 0 rgb(164, 155, 155) inset;
   border-radius: 5px;
 
-  background: #efefef;
+  background: #f0eeee;
 
   padding: 3rem;
-  min-width: 500px;
+  min-width: 20rem;
 
 }
 
@@ -50,17 +50,27 @@ body {
 
 .headingUp {
   font-size: 2rem;
+  color: rgb(93, 93, 93);
 }
 
 .headingDown {
-  color: #e75a5a;
+  color:  #e41f1f;
+  caret-color: #262626;
+  text-shadow: -6px -6px 14px rgba(227, 224, 224, 0.785),
+  -6px -6px 10px rgba(255, 255, 255, 0.667),
+  6px 6px 8px rgba(255, 255, 255, 0.372),
+  6px 6px 10px rgba(0, 0, 0, 0.379);
+
   font-size: 1.5em;
   font-weight: bold;
+}
+span{
+  color: #616161;
 }
 
 input[type="text"]:focus {
   outline: none;
-  /* box-shadow: 0px 0px 5px #e78080; */
+  box-shadow: 0px 0px 5px #e78080; 
   border-color: #e75a5a;
 
   width: 100%;
@@ -68,12 +78,18 @@ input[type="text"]:focus {
 
 textarea:focus {
   outline: none;
-  /* box-shadow: 0px 0px 5px #e78080; */
+  box-shadow: 0px 0px 5px #e78080; 
   border-color: #e75a5a;
 }
 
 .button-upload button:hover {
-  background-color: #9c1919;
+  background-color: #dad7d7;
+  color: #a71010;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+
 }
 
 h2 {
@@ -96,13 +112,17 @@ h2 {
   font-weight: 300;
   font-size: 0.9em;
 }
+#video-title{
+  background-color: rgb(252, 232, 232);
+}
 
 #upload-form {
   width: 100%;
 }
 
 label {
-  font-weight: bold;
+  color: #848181;
+  font-size: 1rem;
 }
 
 input[type="text"],
@@ -110,10 +130,11 @@ textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   outline: none;
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11); */
-  /* box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 20px 0 10px -20px rgba(0, 0, 0, 0.45) inset; */
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11); 
+   box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 20px 0 10px -20px rgba(0, 0, 0, 0.45) inset; 
+   background-color: rgb(252, 232, 232) ;
 
   resize:none;
 }
@@ -121,12 +142,187 @@ textarea {
 .button-upload button {
   padding: 0.9rem 1rem;
   border-radius: 5px;
-  background-color: #e51b1b;
-  color: #fff;
+  background-color: #ededed;
+  color: #e51b1b;
   font-weight: bold;
   cursor: pointer;
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11); */
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
+  -6px -6px 10px rgba(255, 255, 255, .5),
+  6px 6px 8px rgba(255, 255, 255, .075),
+  6px 6px 10px rgba(0, 0, 0, .15);
+
 }
+
+
+#custom-button {
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  background-color: #ededed;
+  color: #e51b1b;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
+  -6px -6px 10px rgba(255, 255, 255, .5),
+  6px 6px 8px rgba(255, 255, 255, .075),
+  6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+#custom-button:hover {
+  background-color: #dad7d7;
+  color: #a71010;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+/* upload button */
+:root {
+  --squish-animation-time: 500ms;
+  --progress-animation-time: 1000ms;
+  --circle-animation-time: 300ms;
+  --checkmark-animation-time: 300ms;
+  --btn-width: 125px;
+  --btn-height: 40px;
+}
+
+.btn {
+  position: relative;
+  background-color: #ededed;
+  color: #e51b1b;
+  border: 1rem;
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
+  -6px -6px 10px rgba(255, 255, 255, .5),
+  6px 6px 8px rgba(255, 255, 255, .075),
+  6px 6px 10px rgba(0, 0, 0, .15);
+  border-radius: 5px;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+.btn:hover{
+  background-color: #dad7d7;
+  color: #a71010;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+              -2px -2px 4px rgba(255, 255, 255, .4),
+              2px 2px 2px rgba(255, 255, 255, .05),
+              2px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.btn.animating {
+  background-color: transparent;
+  color: transparent;
+  user-select: none;
+  cursor: default;
+  box-shadow: none;
+  animation: hide 0ms calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards;
+}
+
+.btn::before {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color:#e51b1b ;
+  inset: 0;
+  border-radius: .125em;
+  animation: squish var(--squish-animation-time) cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  animation-fill-mode: forwards;
+}
+
+
+.btn::after {
+  content: "";
+  display: none;
+  position: absolute;
+  background-color: #AAA;
+  left: 51%;
+  right: 51%;
+  top: 45%;
+  bottom: 45%;
+  border-radius: .25em;
+  animation: progress var(--progress-animation-time) var(--squish-animation-time);
+  animation-fill-mode: forwards;
+}
+
+.btn.animating::before,
+.btn.animating::after {
+  display: block;
+}
+
+.btn.animating + .checkmark-container {
+  background-color: #e51b1b;
+  border-radius: .25em;
+  width: 0;
+  height: 0;
+  animation: circle var(--circle-animation-time) calc(var(--squish-animation-time) + var(--progress-animation-time)) forwards cubic-bezier(0.26, 0.6, 0.46, 1.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.animating + .checkmark-container .checkmark-svg {
+  stroke: white;
+  width: 25px;
+  stroke-dashoffset: 40.84104919433594;
+  stroke-dasharray: 40.84104919433594;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px;
+  animation: checkmark var(--circle-animation-time) calc(var(--squish-animation-time) + var(--progress-animation-time) + var(--circle-animation-time)) forwards;
+}
+
+@keyframes squish {
+  100% {
+    left: -25%;
+    right: -25%;
+    top: 45%;
+    bottom: 45%;
+    border-radius: .25em;
+  }
+}
+
+@keyframes progress {
+  100% {
+    left: -25%;
+    right: -25%;
+  }
+}
+
+@keyframes hide {
+  100% {
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes circle {
+  0% {
+    width: calc(var(--btn-width) * 1.50);
+    height: calc(var(--btn-height) * .1);
+  }
+  100% {
+    background-color: #2041ff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+}
+
+@keyframes checkmark {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
 
 
 @media (max-width:508px) {

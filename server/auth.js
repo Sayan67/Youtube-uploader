@@ -80,7 +80,7 @@ function fetchUserInfo(client, callback) {
         auth: client,
     })
     oauth2.userinfo.get((err, res) => {
-        console.log(res.data)
+        callback(res.data, client, oauth2)
     })
 }
 
