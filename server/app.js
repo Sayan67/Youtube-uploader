@@ -5,17 +5,19 @@ const ejs = require('ejs');
 const dotenv = require('dotenv').config();
 const passport = require('passport');
 const session = require('express-session');
+const path = require('path');
 //require('./conf/passport')(passport); //Need to change the path
 
 //yoUTUBE API
-const auth=require('./auth');
+const auth = require('./auth');
 const OAuth2Data = require('./client_secret.json');
-const {google} = require('googleapis');
-var title,description;
+const { google } = require('googleapis');
+var title, description;
 var tags = [];
+const multer = require('multer');
+const fs = require('fs');
 
 const port = process.env.PORT || 3000;
-const path = require('path');
 const mongoose = require('mongoose');
 const UserModel = require('./models/users');
 const { default: jwtDecode } = require('jwt-decode');
@@ -43,18 +45,10 @@ app.get("/home", (req, res) => {
   else { res.render('index'); }
 
 });
-// app.get("/register",(req,res)=>{
-//     if(console.error()){
-//     res.end("Error loading page.")
-//     }
-//     else{res.render("signup_page");}
-// });
 
 //create new user
 app.post("/register", async (req, res) => {
   try {
-
-
     const newUser = new UserModel({
       name: req.body.name,
       email: req.body.email,
@@ -85,40 +79,68 @@ app.get("/", async (req, res) => {
   auth.handleAuthCode(auth.getGlobalClient(), req.query.code, (client, token) => {
     var userinfo = jwtDecode(token.id_token);
     console.log(userinfo);
-    const tokenid=token;
+    const tokenid = token;
     console.log(client);
     console.log("User logged in with token", token);
+
+    auth.fetchUserInfo(auth.getGlobalClient())
     res.redirect('/home')
   })
 });
 
-// const CLIENT_ID = OAuth2Data.installed.client_id;
-// const CLIENT_SECRET = OAuth2Data.installed.client_secret;
-// const REDIRECT_URL = OAuth2Data.installed.redirect_uris[0];
-// const oAuth2Client = new google.auth.OAuth2(
-//   CLIENT_ID,
-//   CLIENT_SECRET,
-//   REDIRECT_URL,
-// );
 
-// var authed = false;
+//multer library
+var Storage = multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, "./videos");
+  },
+  filename: function (req, file, callback) {
+    callback(null, file.fieldname + "_" + Date.now() + "_" + file.originalname)
+  },
+});
 
-// var scopes = "https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/userinfo.profile";
+var upload = multer({
+  storage: Storage,
+})
 
-// app.get('/YoutAPI',(req,res)=>{
-//   if(!authed){
-//     //generate a OAuth url
-//     var url = oAuth2Client.generateAuthUrl({
-//       access_type:"offline",
-//       scope:scope,
-//     })
+app.post('/upload', upload.single('video'), (req, res) => {
+    console.log(req.file)
+    title = req.body.title;
+    description = req.body.description;
+    tags = req.body.tags
 
-//     res.render("")
-//   }
+    const youtube = google.youtube({
+      version: 'v3',
+      auth: auth.getGlobalClient()
+    })
 
-//   res.render('/YutUpload')
-// });
+    youtube.videos.insert(
+      {
+        resource: {
+          snippet: {
+            title: title,
+            description: description,
+            tags: tags
+          },
+          status: {
+            privacyStatus: "private"
+          },
+        },
 
+        part:"snippet,status",
+
+        media: {
+          body: fs.createReadStream(req.file.path)
+        }
+      },
+      (err,data)=>{
+        if(err) throw err
+        console.log("uploading done");
+        res.render("index")
+      }
+    )
+
+})
 
 app.listen(port, () => {
   if (console.error()) { console.log("Error in server.") }
