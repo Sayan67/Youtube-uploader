@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/search/search.css">
+</head>
+
+<body>
+    <div>
+        <form action="/search" method="get">
+            <input type="text" id="searchBox" name="query"  value="<%= searchText %>" />
+            <button id="searchButton">Search</button>
+        </form>
+    </div>
+    <div class="entries">
+        <% entries.forEach(user => {%>
+            <div class="card">
+                <div class="cardPic">
+                    <img src="<%- user.picture %>" />
+                </div>
+                <div class="cardContent">
+                    <div class="cardName"><%= user.name %></div>
+                    <div class="cardEmail"><%= user.email %></div>
+                    <div>
+                        <a class="recruit" href="/profile/<%= user.uid %>">View</a>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</body>
+
+</html>

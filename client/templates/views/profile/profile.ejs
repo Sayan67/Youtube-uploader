@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="profilePicture">
+            <img src="<%= user.picture  %>">
+        </div>
+        <div>
+            <div>
+                <div>
+                    <%= user.name %>
+                </div>
+                <div>
+                    <%= user.email %>
+                </div>
+            </div>
+
+            <div id="actionPanel">
+                <a id="edit" href="/profile/<%= user.uid %>/edit">Edit</button>
+                <button id="signOut">Sign Out</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <a href="<%= user.uid %>/txn/create">Create Transaction</a>
+        </div>
+        <div class="transactions">
+            <% transactions && transactions.forEach(t => { %>
+                <div onclick="window.location.href='<%- user.uid %>/transaction/<%- t._id %>'">
+                    <div><%= t.name %></div>
+                    <div><%= t.description %></div>
+                    <div>
+                        <a class="recruit btn" href="/apply/<%= t._id %>">Apply</a>
+                        <a class="btn" href="/video/download/<%= t.consumer_vid._id %>">Download</a>
+                    </div>
+                </div> 
+            <% }) %>
+        </div>
+    </div>
+
+    <script>
+
+        (function () {
+            let user = '<%- user ? JSON.stringify(user) : "" %>'
+            user = user ? JSON.parse(user) : null
+            setGlobalUserData(user)
+            
+            const session = checkSessionExists()
+            if (!session || session.uid != user.uid) {
+                document.getElementById('actionPanel').remove()
+            }
+        })()
+
+        document.onload = () => {
+            document.getElementById('signOut').onclick = () => {
+                removeSession()
+                window.location.href = "/profile/<%= user.uid %>"
+            }
+        }
+    </script>
+</body>
+
+</html>

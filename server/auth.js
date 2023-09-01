@@ -5,7 +5,7 @@ const {google} = require('googleapis');
 const { response } = require('express');
 const OAuth2 = google.auth.OAuth2;
 
-let CREDENTIALS;
+var CREDENTIALS;
 let GLOBAL_OAUTH_CLIENT;
 const SCOPES = [
     'https://www.googleapis.com/auth/youtube.upload',
@@ -14,6 +14,7 @@ const SCOPES = [
 ].reduce((p, v) => p + " " + v, '').trim()
 
 function init() {
+    console.log('Initing')
     // Load client secrets from a local file.
     fs.readFile('./client_secret.json', function processClientSecrets(err, content) {
         if (err) {
@@ -21,7 +22,8 @@ function init() {
             return;
         }
         CREDENTIALS = JSON.parse(content)
-        GLOBAL_OAUTH_CLIENT = authorize(CREDENTIALS)
+        console.log(CREDENTIALS)
+        GLOBAL_OAUTH_CLIENT = authorize({...getCredentials()})
     });
 }
 
@@ -80,12 +82,29 @@ function fetchUserInfo(client, callback) {
         auth: client,
     })
     oauth2.userinfo.get((err, res) => {
-        callback(res.data, client, oauth2)
+        callback(res.data, client, oauth2, err)
     })
+}
+
+function fetchUserInfoAsync(client) {
+    return new Promise((resolve, reject) => {
+        fetchUserInfo(client, (user, client, oauth2, err) => {
+            if (err) {
+                reject({code: 'ClientError', err})
+            } else {
+                resolve(user, client, oauth2)
+            }
+        })
+    })
+}
+
+
+function getCredentials()  {
+    return CREDENTIALS
 }
 
 init()
 
 module.exports = {
-    CREDENTIALS, getGlobalClient, authorize, getAuthUrl, handleAuthCode, fetchUserInfo
+    CREDENTIALS, getCredentials, getGlobalClient, authorize, getAuthUrl, handleAuthCode, fetchUserInfo, fetchUserInfoAsync
 }

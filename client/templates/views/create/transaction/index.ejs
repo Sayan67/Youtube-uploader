@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/UPLOAD/upload.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <title>Upload Your Content</title>
+</head>
+
+<body>
+  <div class="root">
+    <div class="container">
+      <div class="heading">
+        <div class="headingUp">
+          Upload video to
+        </div>
+        <div class="headingDown">
+          You<span>tube.</span>
+        </div>
+      </div>
+      <form id="upload-form" action="/profile/<%= user.uid  %>/txn/create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="video-title" style="font-weight: 700;">Name</label>
+          <input type="text" id="video-title" required placeholder="Enter title" name="name">
+        </div>
+        <div class="form-group">
+          <label for="video-description" style="font-weight: 700;">Description</label>
+          <textarea id="video-description" rows="4" required placeholder="Enter description"
+            name="description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="video-file">Video File</label>
+          <input type="file" id="video-file" required name="video">
+        </div>
+        <!-- <div class="button-upload">
+          <button type="submit">Upload</button>
+        </div> -->
+        <button class="btn" data-btn type="submit">Upload</button>
+        <div class="checkmark-container">
+          <svg x="0px" y="0px" fill="none" class="checkmark-svg" viewBox="0 0 25 30" style="height: 2rem;">
+            <path d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2" />
+          </svg>
+        </div>
+
+
+</body>
+</form>
+</div>
+</div>
+
+
+<script>
+  const realFileBtn = document.getElementById("real-file");
+  const customBtn = document.getElementById("custom-button");
+  const customTxt = document.getElementById("custom-text");
+
+  customBtn.addEventListener("click", function () {
+    realFileBtn.click();
+  });
+
+  realFileBtn.addEventListener("change", function () {
+    if (realFileBtn.value) {
+      customTxt.innerHTML = realFileBtn.value.match(
+        /[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+    } else {
+      customTxt.innerHTML = "No file chosen, yet.";
+    }
+  });
+
+  // button
+  const btn = document.querySelector("[data-btn]")
+  btn.addEventListener("click", () => {
+    btn.classList.add("animating")
+  })
+
+
+
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>

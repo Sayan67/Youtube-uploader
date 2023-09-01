@@ -1,0 +1,43 @@
+.card {
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+
+    background: white;
+    border-radius: 1em;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.cardPic > img {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.recruit {
+    background: var(--red-accent-color);
+    color: white;
+    padding: 0.6em 1em;
+    border-radius: 0.2em;
+    text-decoration: none;
+    display: inline-block;  
+}
+
+.recruit:hover {
+    filter: brightness(80%);
+}
+
+.entries {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

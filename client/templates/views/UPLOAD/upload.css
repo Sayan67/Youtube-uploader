@@ -15,29 +15,31 @@
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
-body{
+
+body {
   background-color: #f0eeee;
 }
+
 .root {
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 0 0.5rem;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 10px 0 rgb(164, 155, 155) inset;
   border-radius: 5px;
 
   background: #f0eeee;
 
   padding: 3rem;
   min-width: 20rem;
-
 }
 
 .heading {
@@ -54,23 +56,24 @@ body{
 }
 
 .headingDown {
-  color:  #e41f1f;
+  color: #e41f1f;
   caret-color: #262626;
   text-shadow: -6px -6px 14px rgba(227, 224, 224, 0.785),
-  -6px -6px 10px rgba(255, 255, 255, 0.667),
-  6px 6px 8px rgba(255, 255, 255, 0.372),
-  6px 6px 10px rgba(0, 0, 0, 0.379);
+    -6px -6px 10px rgba(255, 255, 255, 0.667),
+    6px 6px 8px rgba(255, 255, 255, 0.372),
+    6px 6px 10px rgba(0, 0, 0, 0.379);
 
   font-size: 1.5em;
   font-weight: bold;
 }
-span{
+
+span {
   color: #616161;
 }
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: 0px 0px 5px #e78080; 
+  box-shadow: 0px 0px 5px #e78080;
   border-color: #e75a5a;
 
   width: 100%;
@@ -78,7 +81,7 @@ input[type="text"]:focus {
 
 textarea:focus {
   outline: none;
-  box-shadow: 0px 0px 5px #e78080; 
+  box-shadow: 0px 0px 5px #e78080;
   border-color: #e75a5a;
 }
 
@@ -86,9 +89,9 @@ textarea:focus {
   background-color: #dad7d7;
   color: #a71010;
   box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-              -2px -2px 4px rgba(255, 255, 255, .4),
-              2px 2px 2px rgba(255, 255, 255, .05),
-              2px 2px 4px rgba(0, 0, 0, .1);
+    -2px -2px 4px rgba(255, 255, 255, .4),
+    2px 2px 2px rgba(255, 255, 255, .05),
+    2px 2px 4px rgba(0, 0, 0, .1);
 
 }
 
@@ -107,13 +110,32 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.form-group > label {
+.form-group>label {
   margin-bottom: 0.5rem;
   font-weight: 300;
   font-size: 0.9em;
 }
-#video-title{
-  background-color: rgb(252, 232, 232);
+
+#video-file::-webkit-file-upload-button {
+  padding: 0.6em 1em;
+  color: rgb(97, 96, 96);
+  border-color: rgb(97, 96, 96);
+  background: transparent;
+  border-style: solid;
+  border-radius: 0.3em;
+  border-width: 1px;
+
+  margin-right: 2em;
+
+  box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
+    -6px -6px 10px rgba(255, 255, 255, .5),
+    6px 6px 8px rgba(255, 255, 255, .075),
+    6px 6px 10px rgba(0, 0, 0, .15);
+}
+
+
+#video-file {
+  color: rgb(97, 96, 96);
 }
 
 #upload-form {
@@ -127,16 +149,18 @@ label {
 
 input[type="text"],
 textarea {
-  padding: 10px;
+  padding: 1em;
   border: none;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */
   outline: none;
-   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11); 
-   box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 20px 0 10px -20px rgba(0, 0, 0, 0.45) inset; 
-   background-color: rgb(252, 232, 232) ;
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);  */
+  /* box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset, 20px 0 10px -20px rgba(0, 0, 0, 0.45) inset;  */
+  background-color: #e8e8e8;
 
-  resize:none;
+  border: 2px solid #d6d6d6;
+
+  resize: none;
 }
 
 .button-upload button {
@@ -147,9 +171,9 @@ textarea {
   font-weight: bold;
   cursor: pointer;
   box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
-  -6px -6px 10px rgba(255, 255, 255, .5),
-  6px 6px 8px rgba(255, 255, 255, .075),
-  6px 6px 10px rgba(0, 0, 0, .15);
+    -6px -6px 10px rgba(255, 255, 255, .5),
+    6px 6px 8px rgba(255, 255, 255, .075),
+    6px 6px 10px rgba(0, 0, 0, .15);
 
 }
 
@@ -162,18 +186,18 @@ textarea {
   font-weight: bold;
   cursor: pointer;
   box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
-  -6px -6px 10px rgba(255, 255, 255, .5),
-  6px 6px 8px rgba(255, 255, 255, .075),
-  6px 6px 10px rgba(0, 0, 0, .15);
+    -6px -6px 10px rgba(255, 255, 255, .5),
+    6px 6px 8px rgba(255, 255, 255, .075),
+    6px 6px 10px rgba(0, 0, 0, .15);
 }
 
 #custom-button:hover {
   background-color: #dad7d7;
   color: #a71010;
   box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-              -2px -2px 4px rgba(255, 255, 255, .4),
-              2px 2px 2px rgba(255, 255, 255, .05),
-              2px 2px 4px rgba(0, 0, 0, .1);
+    -2px -2px 4px rgba(255, 255, 255, .4),
+    2px 2px 2px rgba(255, 255, 255, .05),
+    2px 2px 4px rgba(0, 0, 0, .1);
 }
 
 #custom-text {
@@ -198,9 +222,9 @@ textarea {
   color: #e51b1b;
   border: 1rem;
   box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
-  -6px -6px 10px rgba(255, 255, 255, .5),
-  6px 6px 8px rgba(255, 255, 255, .075),
-  6px 6px 10px rgba(0, 0, 0, .15);
+    -6px -6px 10px rgba(255, 255, 255, .5),
+    6px 6px 8px rgba(255, 255, 255, .075),
+    6px 6px 10px rgba(0, 0, 0, .15);
   border-radius: 5px;
   width: var(--btn-width);
   height: var(--btn-height);
@@ -208,13 +232,14 @@ textarea {
   cursor: pointer;
   padding: 0;
 }
-.btn:hover{
+
+.btn:hover {
   background-color: #dad7d7;
   color: #a71010;
   box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
-              -2px -2px 4px rgba(255, 255, 255, .4),
-              2px 2px 2px rgba(255, 255, 255, .05),
-              2px 2px 4px rgba(0, 0, 0, .1);
+    -2px -2px 4px rgba(255, 255, 255, .4),
+    2px 2px 2px rgba(255, 255, 255, .05),
+    2px 2px 4px rgba(0, 0, 0, .1);
 }
 
 .btn.animating {
@@ -230,7 +255,7 @@ textarea {
   content: "";
   display: none;
   position: absolute;
-  background-color:#e51b1b ;
+  background-color: #e51b1b;
   inset: 0;
   border-radius: .125em;
   animation: squish var(--squish-animation-time) cubic-bezier(0.26, 0.6, 0.46, 1.7);
@@ -257,7 +282,7 @@ textarea {
   display: block;
 }
 
-.btn.animating + .checkmark-container {
+.btn.animating+.checkmark-container {
   background-color: #e51b1b;
   border-radius: .25em;
   width: 0;
@@ -268,7 +293,7 @@ textarea {
   align-items: center;
 }
 
-.btn.animating + .checkmark-container .checkmark-svg {
+.btn.animating+.checkmark-container .checkmark-svg {
   stroke: white;
   width: 25px;
   stroke-dashoffset: 40.84104919433594;
@@ -308,6 +333,7 @@ textarea {
     width: calc(var(--btn-width) * 1.50);
     height: calc(var(--btn-height) * .1);
   }
+
   100% {
     background-color: #2041ff;
     width: 50px;
@@ -334,5 +360,35 @@ textarea {
 
   .heading {
     max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 70vw;
+
+
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, 0.824),
+      -6px -6px 10px rgba(255, 255, 255, .5),
+      6px 6px 8px rgba(255, 255, 255, .075),
+      6px 6px 10px rgba(0, 0, 0, .15);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .container {
+    width: 40vw;
   }
 }

@@ -13,6 +13,7 @@
   transition: .2s linear;
 }
 
+
 :root {
   --red-accent-color: #e51b1b;
   --bg-color: #eee;
@@ -74,7 +75,7 @@ section {
 
 .profileGmail {
   position: absolute;
-  right: 100%;
+  right: 120%;
   top: 0;
   background: var(--red-accent-color);
   border-radius: 0.4em;
@@ -373,7 +374,7 @@ section {
 }
 
 .about {
-  background: #eee;
+  background: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

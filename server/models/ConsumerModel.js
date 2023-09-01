@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const Schema = mongoose.Schema
+
 const ConsumerSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -21,6 +23,16 @@ const ConsumerSchema = new mongoose.Schema({
     },
     picture: {
         type:String,
+    },
+    
+    user_type: {
+        type: String,
+        required: true
+    },
+
+    transactions: {
+        type: [{type: Schema.Types.ObjectId, ref: 'transaction'}],
+        default: [],
     }
 });
 

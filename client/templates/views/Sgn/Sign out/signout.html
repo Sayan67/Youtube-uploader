@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="action">
+      <div class="profile" onclick="menuToggle();">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcUlEQVR4nO2c32tPYRzHX5thUdSmyChS8qMmJUKpxR9ALbtC7pSrFcmFGGWTH5dqmhs/anPhhlyYSGJqzdVmbqTMrEVIMm18H508F0s73/P9nj3nPJ/t+bzqfXu+z+e18+PZ5znPAUVRFEVRFEVRFEVRFKUcaoHDwA2gD/gMjAM/gLfAHaAJqFSt6VgL3AR+AaaEvAJWq+zSqQJa7FlryswQsFRlJ7MY6E4h2ExKh4ouzkLg+TQlG3sl9AJdwH57hSiT6HIg2UyRQWCdmv7HoYwkG5tvwMbQZS8ARjMWbYDX9reC5UgOko1NM4FSYc+0vEQPA3MJkK05SjY2DQTIcQ+iLxEg9z2IfkKAfPAgepQAKbVhZBxnPgGxyJNkY1uvwVDnUfQKAiK6fAseJBeAagLjkwfRXwgQH9O7hwRIswfRJwmQ5cDvHCX/AVbFjOWyhz/6VPkIXADmuRQdrX4M5FjEQJEVFx9XV7G0uRR91kMBLTFj2SxA7v+dRmcMeyhgKGYs1bNZ9JiHAsZixlLpaV4fl1aXovs9FNAfM5YaQWdym+uHYbuHQq4SINtzvlwLwDYCJc/560UCZ2fGD8afwA7fRUrhcYaiu30XJ4mmDEU3+i5OEtE89lkGkvuAOb6Lk8Z6x/fqcWCL76Kkcsyh6BO+i5H+mth1B5I77LHi2rNfM3wmiGuTxlE1zdWXewkvoN8VIDTXNmmS7LYUA2xPOBsaBUgsJSPkjCkzxVjjaUHYe5s0T9E1wBsBAr20SfMU/XQGncnO26R5ilYSMCo6n66eKTO79NQtj+ge1ZNC9Asf97eZSiTq9jQeKLdUdjIbgJcOnt49tkmlTCH4GjDhcKo0YY8ZHTtooj7xPuBRxou0Bfsbe0PrTS+zLcx3Gco1Rbpj0T8EK5nFbAI6U370xDjOuB1LfYnbQN7PhDZpnf1MhKRXrsyk20qnHWMx6u1qutg26UHguwChJiHRGA8k1HJUYvcuWt24IkCgSbGFuaLIAnKvNNGtAqSZlDlfpK4GSW3SLN/RMDklqiGOXglt0tqcvihjMk60ErMEwZwTIMk4yhmEUuVpu4TJcE4r8os1ewTIMY6zG4GcFiDGOM4pBPJAgBjjONGLPOIYFCDG5LS5yCsjAsSYmf4ii9R9g8bTvkRFURRFURRFURRFURSFdPwFpy7HT4VENV4AAAAASUVORK5CYII=">
+      </div>
+      <div class="menu">
+        <h3>U<span id="name">Tuberrr.</span></h3>
+        <ul>
+          <li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADnklEQVR4nO2cXWjOURzHP5u3oV2gZkmxlsJuuFhqyqSGaF4ukJQkrsjcSVHTvBRJXlotF7jBLaUMw4V5K3lZYYYh886Ft83LOjp1Tj0ty/Ns/5efc86nvrWenv2f8/v0f/7P/5zzPwcCgUAgEAgEAoFAIJAzpcBq4DBwCXgOfAJ+AV+BZ+b1WmBq7of3m2HAOuAWoHLMBaAs7QKkkwesAd73QXBmOoEVaRcjlVFAYz8FZ6YbWJh2UdIYC7RFKNlGfzM2ANVAEZ4zAngYg+Se6QKOAmPw9Jp8JgHJmekAyvGMlQlLtvkIjMMThgAvUxKtcxlPWJuiZJsqPOCaANHncZwiAZKV6caPxGEWCZBs43QPco8AwTb7cJiLAgTb6G6/s7QIEGzzBIfpECA4czzEWToFCM4cA3GWLwIE23zGYVoFCLbRbXGWRgGCbZpwmK0CBNtsw2GmCRBsU4njPBAg+SmQj+McFCD6EI4zy8xSpy1at2EmDnNagGSbUzhMiwDBNndxmOsCBNvomR5naRAg2KYeh5knQLDNXBznigDJV81DPE5TAtxJUfJtYDwesT8FyfozvaM6BdHz8ZDBwNsEJb8GBuEpmxIUvR7P16y0JyBZ90gH4jlVMQ80OT+AlAtbYhS9Oe3iJJEHnIxB8gkfOia5MiDie+sGn+8ysiEq0YF/EEQnhApndBDtFCqc0UG0M1RGeEbPSLsYyeMeLRGKvmeOGeiB7sHVAD8jWt5W68NjX/1hujkb+/O8RkXaRfwv5AOrctzL45H5H+/P4hJzaWgyy+CyXbmqN6babhbLvzFrT7rM3/q1OmBKlscqBM6Z/ZdqTJucuOaWG0l3/3IG3k94NlpvjHKzl0tNnWnrfzXSNwnYCbzIch6vIqHrfjZbV+gt33YAExGKPhMW9PHZut+muIIY2jUU2GU+oy/P5umZejHM6eUrmWvagWUR/ZjpYyw3mxD2t103gNmkyMiYZkXazA/V6D60qRjYCDyOoV3HzYZbiTIhpm3UVI9J1WZzWVkCTDYiC0yKzWtLzXuaE1hN0Gq28kyE0oQffFHC8iqJu6VCYatfVUrRt6bD4xRdL6BIJSQH4pJcJmRFlRKSbtNniJxjAopTwnIkasl6XPebgMKUsHyPesx7sYCilNDoHnFk7BVQkBKa3VGKPiugICU0etfgyIijS6scie4hR8YHAQUpoXkXpegfAgpSQuP0bmOBQCAQCAQCgUAA9/kDstW19j13LD0AAAAASUVORK5CYII="><a href="#">My profile</a>
+          </li>
+          <li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD0UlEQVR4nO2cS6hPQRzHP3/v5C1XeV6ssMBCVkLcvBLJTixEComFpAihxEIeKVmQEltk4S0JiRB5JFxFXrHwvJ6jqZn6d3Pdc/73nJnff8586rux+Dvn09w58/oNRCKRSCQSiUQikUgkNUOABcB+4ALwHPgA/AQ+A/Xm3zcAo9L/fLHpCCwFbgIqZc4Cw32/gHRKwELgXQWCy/MNmOv7ZaTSEzjVQsHl+Q3M9P1S0ugHPM5Qso3+y1gOzABqKDjdgYc5SG6cBuAg0IeC9sknHUguz0tgNAVjvmPJNu+BgRSE9sALT6J1LlIQFnmUbFNHAbgqQPQZAqdGgGRlpvE9CJhZAiTbBD2D3C5AsM0OAua8AME2etofLHcFCLZ5QsC8FCC4fD0kWL4JEFy+BhIsnwQItvlIwDwSINhGP0uwnBIg2OYcAbNOgGCbjQTMGAGCbcYROA8ESH4KtCJwdgsQvYfAmWB2qX2L1s8wnoA5LkCyzTEC5q4AwTZ3CJhrAgTb6J2eYNknQLDNXgJmmgDBNlMInMsCJF8xh3iCZhBw26PkW0AtBWKnB8n6/ywcMzyInk4BaQe8cSj5FdCWgrLaoehlFLxm5ZkDyXpG2oaCU5fzQlPwC0hpWJuj6DW+X04SJeBoDpKPFGFikpbWGY+t9xV5lJGErERHmiGKdoSKLTqKborOwHpTN/kdeGs+7iMRjKqyFl37nyMUP4B5CEVVkejaBDNbLXsEwpiYoeixjma1DQmeRXcjotY9bmYo+jrQwcFzT00g+zVC6GIuNlEZR9ebdxUgWx/A90oJmJNzybI+ZzfbwVT8f7Lv4bGwc4njA4/64PkqoHcLPnx1FcrWx5WdXoKy3BS9/3Io+F+jAN2lLAb6phxdNBiZaWTfBzqRM8PMMuV14I9HuU3lT4IK2sZDuDSyn+W54z4U2CqsXkU1kc0VjpOTyK7LQ3LJfHAkHI5ROUtOIztTJpuTmapAkpVL2d2AAwKkqYwlD0y5YZyr7P5CalGUZ8nlsjO/1WawuSfUtzQlRLLKY3TRPuP1COUo25p5rwHmtoNKfvu5aXyZskuANBVyS7bHbX8KEKdCbsmYUgTf4lTokvVa8VcB8lSo3YVlkgB5KuSWbNkkQKBKkC0JWvLTCn+73kVJxmkBElUzOd7M4r54yXgu7lEJZ2a9ql0ynm/HVQlyolr75MZIH3GsrPaWXO0cipLdcKMauotqp1TBPXtRcgXoj2CU7GiLLbZkB6yI3YWcS1hin5wBl5qQ+8XsEh02a+wRWobePNaydcvWExp944yegHipO/wLm3F7tGC5eOEAAAAASUVORK5CYII="><a href="#">Edit profile</a>
+          </li>
+          <li>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEu0lEQVR4nO2d24tXVRTHP+o0o3YBQ1Okonq1q4I6jtpDQRchCiKUKEdRMsULin9CjoqOokHpQz0FPWQ3yspuT2EXL+VzhuiUmjreHe9Htq4fyvDb+3eOv30u+5z1gQ2DD7PP/s46e6+91jpLUBRFURRFURRFUWLTAjwOzALWA18Au4GDQC9wBbggP+8F9gCfAauA2cA4YFD86arFfcBc4FPgFBA1OY4DnwMLgdFUnBbgVeAr4JIHcW3jMvAN8DrQRoUYIpb2T4ri2sa/wFLgTkrMQGAmsD8HgfuPI8BieatKxaPA7wUQuP8wh2w7JWG5eAlJBDgNbAO6gOnAJDnUhsmb0So/PwJMkDflHdmLzySc6yrQLb8zWGYmfJ03As80ueg7gA5gDfBfgvl/Ax4iUH6KscA/gNdSsijjT78A/BBTbOObT6VkQv8JPJfhs0wEvoshdh/wMoHxRp2FnATekr02D4zvfiCG791JYCyQq/JR4EPggbwfCLgb+CiG2MFZdlGZI1uFaxsJcs8uIlMkNuI6IIP1RorGYw1cwV/FbVQ8ie2y7LU+JlFubiO2PfuKuIiKJ+Y6rHpPGQNReeJy/UyIV/HoZ9suNf8DQ31NpHA9/mKz6iV5CtQmEbNjEqrcJNmUkPneInRPXmkxM+nWOg9kxA6ZdodVzyiKyJFktEPnR8vazJoLIbIZJwifFy1rM5n7UUUQOZIUUei0SPFOvfWZyGTuIm8tUR1Ft2WNpuAnNaomcu1qXm+dx9JKYFRRZCSfacuuj8UzVRW5hi3f2On7L/plA5G/BQZTXros6zb/7gUV+QadaR6IVd8u4twSTVlZUwyJIXIRxnHg3QziKg9b5jdVsU2xuQAiRgnG+6TLcEcp221jfMNzBRAvSjDOplyU02aZ93wzv1SFzkhoJMQZBTTeI8CtA/GJQzgMe4ENIR+GBnXvbjIpLfeuhl5YbjDLIvQWPKJiw0qL0CvwTNW3kW2WNadSR11VsVvFT6+33qfSmrSKYk/NOvBfVbHXZXEQNiO26U5QhuTsIcv63s7qIRqJbT7MHEDYTHOUG4zM8kFcYvfl+PWVL362rO1rcsAm9geETYfjbTWfTpOX2Otlu+gTke+inOVgPUU46AeUYF9GLNZmzaYFheKBe6SJSj2RjQeiheie+NhhzanX21WFeQ6Rd2oHMj883eDzt/Ge5qk0T0g9t82aV+f9gGUR+aBD5F/0E2U/24XLkk37iwc9zEPVD74+h8imtmUygbBIMsW1xij3F8RPdrlwtcYoLxEIb1pa/czLMdg03XEZuTUyZzqcBR/5ioC/gOczDhDZYhf9t4tgLDlJO7YdYmVtKQXtpzX4g/c/+ILZkxt1CYsc+TdTfvtsk6K3So5vnSMzYnPhgvYulkkhYJRgnJGmgKukHXGHHKLDpGmgEfNeaZnZLsUtXVISYMtWR44b3+qytPIZA2xPKEAWY0cZr9UDxTr3FUDgwxKFK3WL+sHAfODvHATukaB9peLJg4BX5LO6iymKe0kSqWl5NkExQroqftIg7pDEg9kidReZlgSEZulj5GbWLf/1x0557XvlanxBxDQ9T3eJqF1ScPhkCUocFEVRFEVRFEVRyIxrSdkukcesYAUAAAAASUVORK5CYII="><a href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function menuToggle() {
+        const toggleMenu = document.querySelector(".menu");
+        toggleMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

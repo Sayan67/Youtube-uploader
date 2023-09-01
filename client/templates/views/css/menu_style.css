@@ -1,0 +1,108 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #e0e0e0;
+}
+
+.profileCard {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+#name {
+    color: #555;
+}
+
+.profileCard {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.profileCard .profMenu {
+    position: absolute;
+    top: 120px;
+    right: -10px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 5rem;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.profileCard .profMenu.active {
+    top: 80px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.profileCard .profMenu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.profileCard .profMenu h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: #eb1e1e;
+    line-height: 1.5em;
+}
+
+.profileCard .profMenu h3 span {
+    font-size: 14px;
+    color: #cecece;
+    font-weight: 500;
+}
+
+.profileCard .profMenu ul li {
+    list-style: none;
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.profileCard .profMenu ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.profileCard .profMenu ul li:hover img {
+    opacity: 1;
+}
+
+.profileCard .profMenu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 0.6rem;
+}
+
+.profileCard .profMenu ul li:hover a {
+    color: #eb1e1e;
+} */

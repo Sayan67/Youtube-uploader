@@ -1,4 +1,4 @@
-const SESSION_COOKIE = 'session'
+const SESSION_COOKIE = 'session_data'
 
 function checkSessionExists() {
     const session = Cookies.get(SESSION_COOKIE)
@@ -29,9 +29,12 @@ function configureSession() {
     if (user) {
         const session = checkSessionExists()
         if (!session || session.uid != user.uid) {
-            createSession(user.uid)
+            createSession(user)
         }
-    } else {
-        removeSession()
+    } else { 
+        const session = checkSessionExists()
+        if (session) {           
+            window.location.href=`/home/${session.uid}`
+        }
     }
 }
