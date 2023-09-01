@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="profle.css">
 </head>
 
 <body>
-    <div>
+    <div class="container">
+        <h1>P<span>rofile.</span></h1>
         <div class="profilePicture">
             <img src="<%= user.picture  %>">
         </div>
-        <div>
-            <div>
-                <div>
-                    <%= user.name %>
+        
+            
+                <div class="initial-scale">
+                  <label for="name">Name:</label>  <%= user.name %>
                 </div>
-                <div>
-                    <%= user.email %>
+                <div class="initial-scale">
+                   <label for="name">Email:</label> <%= user.email %>
                 </div>
-            </div>
+            
 
-            <div id="actionPanel">
+            <!-- <div id="actionPanel">
                 <a id="edit" href="/profile/<%= user.uid %>/edit">Edit</button>
                 <button id="signOut">Sign Out</button>
-            </div>
-        </div>
+            </div> -->
+        
     </div>
-    <div>
-        <div>
-            <a href="<%= user.uid %>/txn/create">Create Transaction</a>
+    <div class="trn">
+        <div class="create">
+           <button> <a href="<%= user.uid %>/txn/create">Create Transaction</a></button> 
         </div>
         <div class="transactions">
             <% transactions && transactions.forEach(t => { %>

@@ -304,7 +304,7 @@ app.get('/profile/:id', (req, res) => {
     .then(user => {
       res.render('profile/profile', {user, transactions: user.transactions})
     })
-    .catch(err => res.redirect(`404/usernotfound/${id}`));
+    .catch(err => res.redirect(`404/usernotfound/${uid}`));
 })
 
 app.get('/search', (req, res) => {

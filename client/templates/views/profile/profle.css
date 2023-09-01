@@ -1,0 +1,74 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 5rem;
+    background-color: rgb(238, 238, 238);
+}
+h1{
+    font-size: 5rem;
+    color:#e51b1b;
+}
+span{
+    color:#616161;
+}
+label{
+    font-size: 2rem;
+    color: #e51b1b;
+}
+.container{
+    /* margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    /* border: 3px solid red; */
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    border-radius: 8px;
+}
+.profilePicture{
+    /* border: 2px solid rgb(255, 93, 93); */
+    border-radius: 8rem;
+    height: 10rem;
+
+}
+img{
+    height: 10rem;
+    border-radius: 8rem;
+}
+.initial-scale{
+    margin: 5rem;
+    font-size: 1.7rem;
+    color: rgb(94, 94, 94);
+    /* background-color: rgb(214, 214, 214); */
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+.create a{
+    color: #e51b1b;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:2rem;
+}
+.transactions a{
+    color: #e51b1b;
+    text-decoration: none;
+    cursor: pointer;
+}
+.trn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    flex-direction: column;
+    background-color: rgb(228, 228, 228);
+    border-radius: 8px;
+}
+/* button{
+    
+} */
