@@ -90,9 +90,11 @@ Creating this website was not really easy for us.We faced quite a few complicati
 2. Using Google's OAuth2.0 for the feature #sign in with google was a hectic task for us. Generating client id, client secrets and keeping track of them and binding the code blocks in proper place was a no     doubt tough job for us.
 3. Connecting YoutubeAPIv3 and managing this complex backend server was the most difficult part though.
 
-## Upcoming Modifications
+## Upcoming Modifications to be added:
 - [x] 1. We will properly integrate YoutubeAPI using token recieved through Google OAuth2.0. 
-- [ ] 2. We have planned for another layer for protection and security to our consumers(Youtuber). In due time,we are going to modify our platform in such a way such that the consumer get a option to approve         the upload after the service provider(Video editor) uploads the video to our website. The consumer gets a pop up in his/her dashboard, where he/she can see the Video, Title, Description, Tags and            make sure it is the desired video and infos are correct. Only then the video gets uploaded from our server. 
+- [ ] 2. We have planned for another layer for protection and security to our consumers(Youtuber). In due time,we are going to modify our platform in such a way such that the consumer get a option to approve         the upload after the service provider(Video editor) uploads the video to our website. The consumer gets a pop up in his/her dashboard, where he/she can see the Video, Title, Description, Tags and            make sure it is the desired video and infos are correct. Only then the video gets uploaded from our server.
+- [ ] 3. Improve UI and UX
+- [ ] 4. Different UI for Clients and freelancer 
   
 ## Tech Stack
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
