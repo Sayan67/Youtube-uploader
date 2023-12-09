@@ -1,4 +1,4 @@
-## What is UTuberrr. ???
+## What is UTuberrr. ?
 It is a platform for Youtubers to make their life easy.
 But How?
 -Suppose you're an Youtuber and you're having a huge number of audience. But for content creation you lead a very busy schedule. It is next to impossible for you to edit your own videos and post it using proper Title, Description, Tags etc on Youtube. So you hire a person to edit your videos and upload it in your youtube channel. But for that you need to give the access of your channel to that person. 
@@ -57,7 +57,7 @@ We are a platform that empowers YouTube channel owners with robust security meas
        For reference👉 https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
 
 
-5. Get your google client_id
+5. Get your google client_id. 
    For reference👉 https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
 
 6. Navigate to the file index.ejs in client/template/views/
