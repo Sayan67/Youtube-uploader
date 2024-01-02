@@ -115,6 +115,18 @@ Creating this website was not really easy for us.We faced quite a few complicati
 ## Contributors
 1. [Sayan Das](https://www.linkedin.com/in/sayan-das-435b1721a/) 
 2. [Shinjini Bose](https://www.linkedin.com/in/shinjini-bose-9aa57b23a/)
+3. [Anonymous] SS
+4. [Anonymous] SB
+
+## Contributing
+In order to contribute to this repository, take a look at the issues that have the tag `help-wanted`. In order to start contributing you need to follow these steps.
+1. Create a fork of the repository. 
+2. Clone the forked repository to your local machine and make the changes.
+3. After making the necessary changes, commit them to the `dev` branch of your local repo and push it to the forked repo.
+4. Create a pull request, stating which exact issue(s) you are addressing with the commit(s).
+5. The request will then be reviewed and any changes required will be conveyed. If all the conditions are met, then the PR will be accepted. 
+
+If you are having trouble understanding how to perform the above, you can reach out to the mentors for help.
 
 ## Love from Kill-a-Byte team.❤️
 
