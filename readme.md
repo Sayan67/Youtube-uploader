@@ -9,9 +9,14 @@ Basically we provide a platform where you(Youtuber) and your service provider(Ed
 He can directly upload the video in your Youtube channel using Title, Tags, Description etc. through our website.
 Our server will upload the video in your channel using YoutubeAPI.
 So it's Safe!
-![Screenshot from 2023-08-29 22-25-27](https://github.com/Sayan67/Youtube-uploader/assets/94789182/6942cea1-c488-458f-806c-a9f3a306ab71) ![Screenshot from 2023-08-29 18-01-26](https://github.com/Sayan67/Youtube-uploader/assets/94789182/4b00eed3-bf02-46b4-87c6-ed7511b2ee59) ![Screenshot from 2023-08-29 23-42-15](https://github.com/Sayan67/Youtube-uploader/assets/94789182/eaf82fbb-8764-4281-945b-7f43eeb32c2c)
-
-
+<div align="center">
+<img src="https://github.com/Sayan67/Youtube-uploader/assets/94789182/6942cea1-c488-458f-806c-a9f3a306ab71" width="60%"></div>
+<br>
+<div align="center">
+<img src="https://github.com/Sayan67/Youtube-uploader/assets/94789182/4b00eed3-bf02-46b4-87c6-ed7511b2ee59" width="60%"></div>
+<br>
+<div align="center">
+<img src="https://github.com/Sayan67/Youtube-uploader/assets/94789182/eaf82fbb-8764-4281-945b-7f43eeb32c2c" width="60%"></div>
 
 ## About us 💜
 We are a platform that ensures security and facilitates access to one's YouTube channel that involves combining authentication, authorization, and management features to provide a secure and user-friendly experience for Youtube channel owners.
@@ -22,7 +27,9 @@ We are a platform that ensures security and facilitates access to one's YouTube 
 3. The service provider choose,sets the thumbnail,Title, Description etc as per their words and uploads the video from our website to directly in your channel.
 4. One you Sign up your sign in credentials will be stored in our database.
 5. After that you can sign in with google easily.
-   ![Logo](https://onymos.com/wp-content/uploads/2020/10/google-signin-button.png)
+
+<div align="center">
+<img src="https://onymos.com/wp-content/uploads/2020/10/google-signin-button.png" width="50%"></div>
 
 
 ## Use ⚙️
@@ -112,21 +119,97 @@ Creating this website was not really easy for us.We faced quite a few complicati
 
 
 
-## Contributors
-1. [Sayan Das](https://www.linkedin.com/in/sayan-das-435b1721a/) 
-2. [Shinjini Bose](https://www.linkedin.com/in/shinjini-bose-9aa57b23a/)
-3. [Anonymous] SS
-4. [Anonymous] SB
+## Contributors ✨
 
-## Contributing
-In order to contribute to this repository, take a look at the issues that have the tag `help-wanted`. In order to start contributing you need to follow these steps.
-1. Create a fork of the repository. 
-2. Clone the forked repository to your local machine and make the changes.
-3. After making the necessary changes, commit them to the `dev` branch of your local repo and push it to the forked repo.
-4. Create a pull request, stating which exact issue(s) you are addressing with the commit(s).
-5. The request will then be reviewed and any changes required will be conveyed. If all the conditions are met, then the PR will be accepted. 
+Thanks goes to these wonderful people 💜
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Sayan67"><img src="https://avatars.githubusercontent.com/u/94789182?v=4" width="100px;" alt=""/><br /><sub><b>Sayan Das</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧✍️🖥️</a></td>
+    <td align="center"><a href="https://github.com/shinjini-bose"><img src="https://avatars.githubusercontent.com/u/115457915?v=4" width="100px;" alt=""/><br /><sub><b>shinjini-bose</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/soumit-s"><img src="https://avatars.githubusercontent.com/u/89582406?v=4" width="100px;" alt=""/><br /><sub><b>Soumit Srimany</b></sub></a><br /><a  title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/arghadipmanna101"><img src="https://avatars.githubusercontent.com/u/130065095?v=4" width="100px;" alt=""/><br /><sub><b>Arghadip Manna</b></sub></a><br /> <a  title="Code">💻</a></td>
+  </tr>
+  </table>
 
-If you are having trouble understanding how to perform the above, you can reach out to the mentors for help.
+## How to Contribute
+
+- Take a look at the Existing [Issues] or create your own!
+- Fork the Repo and create a Branch for any Issue that you are working upon.
+- Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
+- Add Screenshots to help us know what this is all about.
+
+## How to make a Pull Request
+
+**1.** Fork the repository by clicking on the Fork symbol at the top right corner.
+
+**2.** Clone the forked repository.
+
+```
+   git clone https://github.com/<Your name>/Youtube-uploader.git
+```
+
+**3.** Navigate to the project directory.
+
+```
+   cd Youtube-uploader
+```
+
+**4.** Create a new branch:
+
+```
+   git checkout -b YourBranchName
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```
+   git add .
+   git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```
+   git push origin YourBranchName
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
+**Note** If anyone contributes to this repository, then the changes will not be reflected in your local repository. For that:
+
+**9.** Setup a reference(remote) to the original repository to get all the changes from the remote.
+
+```
+   git remote add upstream https://github.com/<Your name>/Youtube-uploader.git
+```
+
+**10.** Check the remotes for this repository.
+
+```
+   git remote -v
+```
+
+**11.** Fetching from the remote repository will bring in its branches and their respective commits.
+
+```
+   git fetch upstream
+```
+
+**12.** Make sure that you're on your master branch.
+
+```
+   git checkout master
+```
+
+**13.** Now that we have fetched the upstream repository, we want to merge its changes into our local branch. This will bring that branch into sync with the upstream, without losing our local changes.
+
+```
+   git merge upstream/master
+```
+
+Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocking you from working further.
 
 ## Love from Kill-a-Byte team.❤️
 
