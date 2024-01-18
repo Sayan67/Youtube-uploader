@@ -119,17 +119,6 @@ Creating this website was not really easy for us.We faced quite a few complicati
 
 
 
-## Contributors ✨
-
-Thanks goes to these wonderful people 💜
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Sayan67"><img src="https://avatars.githubusercontent.com/u/94789182?v=4" width="100px;" alt=""/><br /><sub><b>Sayan Das</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧✍️🖥️</a></td>
-    <td align="center"><a href="https://github.com/shinjini-bose"><img src="https://avatars.githubusercontent.com/u/115457915?v=4" width="100px;" alt=""/><br /><sub><b>shinjini-bose</b></sub></a><br /><a title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/soumit-s"><img src="https://avatars.githubusercontent.com/u/89582406?v=4" width="100px;" alt=""/><br /><sub><b>Soumit Srimany</b></sub></a><br /><a  title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/arghadipmanna101"><img src="https://avatars.githubusercontent.com/u/130065095?v=4" width="100px;" alt=""/><br /><sub><b>Arghadip Manna</b></sub></a><br /> <a  title="Code">💻</a></td>
-  </tr>
-  </table>
 
 ## How to Contribute
 
@@ -210,6 +199,19 @@ Thanks goes to these wonderful people 💜
 ```
 
 Work in Progress pull requests are also welcome to get feedback early on, or if there is something blocking you from working further.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people 💜
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Sayan67"><img src="https://avatars.githubusercontent.com/u/94789182?v=4" width="100px;" alt=""/><br /><sub><b>Sayan Das</b></sub></a><br /><a href="#maintenance-Tlazypanda" title="Maintenance">🚧✍️🖥️</a></td>
+    <td align="center"><a href="https://github.com/shinjini-bose"><img src="https://avatars.githubusercontent.com/u/115457915?v=4" width="100px;" alt=""/><br /><sub><b>shinjini-bose</b></sub></a><br /><a title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/soumit-s"><img src="https://avatars.githubusercontent.com/u/89582406?v=4" width="100px;" alt=""/><br /><sub><b>Soumit Srimany</b></sub></a><br /><a  title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/arghadipmanna101"><img src="https://avatars.githubusercontent.com/u/130065095?v=4" width="100px;" alt=""/><br /><sub><b>Arghadip Manna</b></sub></a><br /> <a  title="Code">💻</a></td>
+  </tr>
+  </table>
+
 
 ## Love from Kill-a-Byte team.❤️
 
